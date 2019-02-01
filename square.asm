@@ -71,11 +71,11 @@ global _start:
 	mov cx, 1000
 	div cx
 
-	mov word[ans1], ax
+	mov byte[ans1], al
 	mov word[num1], dx	
 
 	;print digit a
-	add word[ans1], 30h	
+	add byte[ans1], 30h	
 	mov eax, 4
 	mov ebx, 1
 	mov ecx, ans1
